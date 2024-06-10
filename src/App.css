@@ -1,0 +1,40 @@
+input:focus ~ label {
+    top: -6px;
+    color: #ef4444; 
+    /* font-size: 0.75rem;  */
+    transition: top 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+}
+
+
+.header-fixed {
+    padding-top: 5rem;
+  }
+
+  .swiper-container,
+.swiper-slide {
+  pointer-events: auto; 
+}
+
+
+.cursor {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #fc7878;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    pointer-events: none;
+    transition: width 0.3s ease, height 0.3s ease, background-color 0.3s ease;
+  }
+  
+  a:hover .cursor,
+  button:hover .cursor,
+  input[type="submit"]:hover .cursor {
+    width: 40px;
+    height: 40px;
+    background-color: #e19696;
+  }
+  
