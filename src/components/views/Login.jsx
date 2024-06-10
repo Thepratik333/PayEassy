@@ -33,8 +33,8 @@ function Login() {
   };
   return (
 
-    <div className="flex h-screen">
-      <div id="leftside" className={`flex flex-col items-center justify-center max-h-screen w-3/6`} style={{ backgroundImage: `url(${bg})`, padding: '6px' }}>
+    <div className="flex md:flex-row flex-col h-screen">
+      <div id="leftside" className={`flex flex-col items-center md:w-3/6 justify-center max-h-screen w-full `} style={{ backgroundImage: `url(${bg})`, padding: '6px' }}>
         <div id="home" className="text-center">
           <img src={logo} alt="Logo" className="w-40 h-20 mb-6 mx-auto" />
           <div className="text-center text-white">
@@ -71,7 +71,7 @@ function Login() {
         </div>
       </div>
 
-      <div id="rightside" className="pt-6 flex-1 overflow-y-auto">
+      <div id="rightside" className="pt-6 flex-1 md:overflow-y-auto overflow-visible">
         <div className="about flex flex-col m-12 text-lg">
           <h2 className="mb-5">Sign In</h2>
           <a
@@ -86,7 +86,7 @@ function Login() {
           </h4>
 
           {showDivLogin && (
-            <div id="divLogin" className="row mb-8 mt-3 flex justify-center">
+            <div id="divLogin" className="row mb-8 mt-3 flex md:flex-row flex-col justify-center">
               <div className="col-md-4 mb-4">
                 <div className="mui-textfield mui-textfield--float-label">
                   <div className="group relative ">
