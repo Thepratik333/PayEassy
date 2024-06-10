@@ -1,7 +1,7 @@
 import React from 'react';
-import android from '../../assets/android.svg'
-import pdf from '../../assets/pdf.svg'
-import doc from '../../assets/apidoc.svg'
+import android from '../../assets/android.svg';
+import pdf from '../../assets/pdf.svg';
+import doc from '../../assets/apidoc.svg';
 
 const BlogSection = () => {
   return (
@@ -17,38 +17,38 @@ const BlogSection = () => {
           <div className="swiper blog-cont wow fadeInUp w-full">
             <div className="swiper-wrapper blog-items grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="swiper-slide">
-                <div className="blog-item">
-                <div className='flex justify-center items-center h-[25vh]'>
-                <img src={android} className='h-36 hover:scale-110 ease-in duration-200' alt="blog_image" />
-                </div>
-                  <div className="blog-item-desc text-white text-center">
-                    <h4 className="text-red-500 text-lg">How to recharge your mobile online?</h4>
-                    <p>Mobile recharges are now easier and faster with our instant online recharge services. Here’s how you can recharge your mobile online.</p>
-                    <a href="#" className="read-more">Read more</a>
+                <div className="blog-item bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                  <div className='flex justify-center items-center h-[25vh]'>
+                    <img src={android} className='h-36 hover:scale-110 ease-in duration-200' alt="blog_image" />
+                  </div>
+                  <div className="blog-item-desc text-white text-center p-4">
+                    <h4 className="text-red-500 text-lg mb-2">How to recharge your mobile online?</h4>
+                    <p className="text-gray-300 text-sm">Mobile recharges are now easier and faster with our instant online recharge services. Here’s how you can recharge your mobile online.</p>
+                    <a href="#" className="read-more text-red-500 hover:text-red-600">Read more</a>
                   </div>
                 </div>
               </div>
               <div className="swiper-slide">
-                <div className="blog-item">
-                <div className='flex justify-center items-center h-[25vh]'>
-                <img src={pdf} className='h-36 hover:scale-110 ease-in duration-200' alt="blog_image" />
-                </div>               
-                   <div className="blog-item-desc text-white text-center">
-                    <h4 className="text-red-500 text-lg">Advantages of Online Mobile Recharge</h4>
-                    <p>Discover the numerous advantages of using our online mobile recharge services.</p>
-                    <a href="#" className="read-more">Read more</a>
+                <div className="blog-item bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                  <div className='flex justify-center items-center h-[25vh]'>
+                    <img src={pdf} className='h-36 hover:scale-110 ease-in duration-200' alt="blog_image" />
+                  </div>
+                  <div className="blog-item-desc text-white text-center p-4">
+                    <h4 className="text-red-500 text-lg mb-2">Advantages of Online Mobile Recharge</h4>
+                    <p className="text-gray-300 text-sm">Discover the numerous advantages of using our online mobile recharge services.</p>
+                    <a href="#" className="read-more text-red-500 hover:text-red-600">Read more</a>
                   </div>
                 </div>
               </div>
               <div className="swiper-slide">
-                <div className="blog-item">
-                <div className='flex justify-center items-center h-[25vh]'>
-                <img src={doc} className='h-36 hover:scale-110 ease-in duration-200' alt="blog_image" />
-                </div>               
-                   <div className="blog-item-desc text-white text-center">
-                    <h4 className="text-red-500 text-lg">Safe and Secure Online Payments</h4>
-                    <p>Our platform ensures safe and secure online payments for all your transactions.</p>
-                    <a href="#" className="read-more">Read more</a>
+                <div className="blog-item bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                  <div className='flex justify-center items-center h-[25vh]'>
+                    <img src={doc} className='h-36 hover:scale-110 ease-in duration-200' alt="blog_image" />
+                  </div>
+                  <div className="blog-item-desc text-white text-center p-4">
+                    <h4 className="text-red-500 text-lg mb-2">Safe and Secure Online Payments</h4>
+                    <p className="text-gray-300 text-sm">Our platform ensures safe and secure online payments for all your transactions.</p>
+                    <a href="#" className="read-more text-red-500 hover:text-red-600">Read more</a>
                   </div>
                 </div>
               </div>

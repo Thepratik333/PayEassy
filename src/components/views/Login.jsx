@@ -34,42 +34,45 @@ function Login() {
   return (
 
     <div className="flex md:flex-row flex-col h-screen">
-      <div id="leftside" className={`flex flex-col items-center md:w-3/6 justify-center max-h-screen w-full `} style={{ backgroundImage: `url(${bg})`, padding: '6px' }}>
-        <div id="home" className="text-center">
-          <img src={logo} alt="Logo" className="w-40 h-20 mb-6 mx-auto" />
-          <div className="text-center text-white">
-            <h2 className="text-3xl pb-5 font-light">Your One Stop Shop for online payments</h2>
-            <div className="mt-2">
-              <p></p>
-              <p className="text-lg">
-                <span className="text-sm block">CUSTOMER SUPPORT</span>
-                <br />
-                <i className="fa fa-globe"></i>&nbsp;&nbsp;www.payeassy.com
-                <br />
-                <i className="fa fa-phone"></i>&nbsp;&nbsp;9021690216 | &nbsp;
-                <i className="fa fa-envelope"></i>&nbsp;&nbsp;sales@payeassy.com
-              </p>
-              <hr className="my-4" />
-              <span className="text-sm block mb-2">Follow Us on:</span>
-              <ul className="flex justify-center text-3xl space-x-4 mb-4">
-                <li>
-                  <FaFacebook/>
-                </li>
-                <li>
-                    <FaTwitter/>
-                </li>
-                <li>
-                  <FaYoutube/>
-                </li>
-                <li>
-                  <FaLinkedin/>
-                </li>
-              </ul>
-              <span className="text-sm">© Pay Eassy ALL RIGHTS RESERVED.</span>
-            </div>
+    <div
+      id="leftside"
+      className={`flex flex-col items-center justify-center md:w-3/6 w-full max-h-screen bg-cover bg-center`}
+      style={{ backgroundImage: `url(${bg})`, padding: '6px' }}
+    >
+      <div id="home" className="text-center animate__animated animate__fadeInUp">
+        <img src={logo} alt="Logo" className="w-40 h-20 mb-6 mx-auto transition-transform duration-500 hover:scale-110" />
+        <div className="text-center text-white">
+          <h2 className="text-3xl pb-5 font-light">Your One Stop Shop for Online Payments</h2>
+          <div className="mt-2">
+            <p className="text-lg">
+              <span className="text-sm block">CUSTOMER SUPPORT</span>
+              <br />
+              <i className="fa fa-globe"></i>&nbsp;&nbsp;www.payeassy.com
+              <br />
+              <i className="fa fa-phone"></i>&nbsp;&nbsp;9021690216 | &nbsp;
+              <i className="fa fa-envelope"></i>&nbsp;&nbsp;sales@payeassy.com
+            </p>
+            <hr className="my-4 border-white" />
+            <span className="text-sm block mb-2">Follow Us on:</span>
+            <ul className="flex justify-center text-3xl space-x-4 mb-4">
+              <li className="transition-transform duration-500 hover:scale-110">
+                <FaFacebook />
+              </li>
+              <li className="transition-transform duration-500 hover:scale-110">
+                <FaTwitter />
+              </li>
+              <li className="transition-transform duration-500 hover:scale-110">
+                <FaYoutube />
+              </li>
+              <li className="transition-transform duration-500 hover:scale-110">
+                <FaLinkedin />
+              </li>
+            </ul>
+            <span className="text-sm">© Pay Eassy ALL RIGHTS RESERVED.</span>
           </div>
         </div>
       </div>
+    </div>
 
       <div id="rightside" className="pt-6 flex-1 md:overflow-y-auto overflow-visible">
         <div className="about flex flex-col m-12 text-lg">

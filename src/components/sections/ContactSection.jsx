@@ -23,75 +23,46 @@ const ContactSection = () => {
     };
 
     return (
-        <section className="contact-section py-10 px-8" id="contact">
-            <div className="container md:flex ">
-                <div className="contact-info-cont text-start">
-                    <div className="text-left">
+        <section className="contact-section py-10 px-8 bg-gray-100" id="contact">
+            <div className="container md:flex justify-between items-center">
+                <div className="contact-info-cont text-start mr-8">
+                    <div className="text-left mb-8">
                         <h2 className="text-3xl text-[#15295f] font-bold mb-4">Let's Connect</h2>
-                    </div>
-                    <p className="text-left mb-4">
-                        Please fill out the form on this section to contact with me. Or call between 9 AM To 7 PM
-                    </p>
-                    <p className="text-left mb-4">
-                        <b>Address : Pay Eassy,Pay Eassy Retail Private Limited, 3rd Floor, Nirmal Heights,,Nandi Stop, Ausa Road, Latur - 413512,Maharashtra,Latur.</b>
-                    </p>
-                    <a href="tel:9021690216">
-                        <p className="text-left mb-4">
-                            Contact No : 9021690216
+                        <p className="text-gray-600">
+                            Please fill out the form below to contact us, or feel free to call us between 9 AM to 7 PM.
                         </p>
-                        </a>
-                        <a href="mailto:sales@payeassy.com">
-                            <p className="text-left mb-4">
-                                Email ID : sales@payeassy.com
-                            </p>
-                        </a>
-                        <a href="/">
-                            <p className="text-left mb-4">
-                            Terms & Conditions / Terms Of Use
-                            </p>
-                        </a>
-                        <a href="/">
-                            <p className="text-left mb-4">
-                            About Us
-                            </p>
-                        </a>
-                        <a href="/">
-                            <p className="text-left mb-4">
-                            Shipping Policy
-                            </p>
-                        </a>
-                        <a href="/">
-                            <p className="text-left mb-4">
-                            Privacy Policy
-                            </p>
-                        </a>
-                        <a href="/">
-                            <p className="text-left mb-4">
-                            Refund & Cancellation Policy
-                            </p>
-                        </a>
-                        <div className="socialMedia flex">
-                        <FaInstagram  className='mr-2 text-xl' />
-                        <FaTwitter className='mr-2 text-xl'/>
-                        <FiFacebook className='mr-2 text-xl'/>
-                        </div>
                     </div>
-                <form onSubmit={handleSubmit} className="contact-form">
-                    <h3 className="text-3xl text-[#15295f] font-bold mb-4 ">Let's message me and make something together</h3>
+                    <p className="text-gray-600 mb-8">
+                        <b>Address:</b> Pay Eassy, Pay Eassy Retail Private Limited, 3rd Floor, Nirmal Heights, Nandi Stop, Ausa Road, Latur - 413512, Maharashtra, Latur.
+                    </p>
+                    <p className="text-gray-600 mb-8">
+                        <b>Contact No:</b> <a href="tel:9021690216">9021690216</a>
+                    </p>
+                    <p className="text-gray-600 mb-8">
+                        <b>Email ID:</b> <a href="mailto:sales@payeassy.com">sales@payeassy.com</a>
+                    </p>
+                    <div className="socialMedia flex mb-8">
+                        <FaInstagram className='mr-4 text-xl transition duration-500 ease-in-out transform hover:scale-110' />
+                        <FaTwitter className='mr-4 text-xl transition duration-500 ease-in-out transform hover:scale-110'/>
+                        <FiFacebook className='mr-4 text-xl transition duration-500 ease-in-out transform hover:scale-110'/>
+                    </div>
+                </div>
+                <form onSubmit={handleSubmit} className="contact-form w-full md:w-1/2">
+                    <h3 className="text-3xl text-[#15295f] font-bold mb-4">Let's message and make something together</h3>
                     <input
                         type="text"
                         name="name"
                         value={formData.name}
                         onChange={handleInputChange}
-                        className="input-control mb-4 block w-full border rounded py-3 px-3 placeholder-gray-400"
+                        className="input-control mb-4 block w-full border rounded py-3 px-4 placeholder-gray-400 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
                         placeholder="Your Name"
                     />
                     <input
-                        type="text"
+                        type="email"
                         name="email"
                         value={formData.email}
                         onChange={handleInputChange}
-                        className="input-control mb-4 block w-full border rounded py-3 px-3 placeholder-gray-400"
+                        className="input-control mb-4 block w-full border rounded py-3 px-4 placeholder-gray-400 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
                         placeholder="Your Email"
                     />
                     <textarea
@@ -99,11 +70,11 @@ const ContactSection = () => {
                         value={formData.message}
                         onChange={handleInputChange}
                         rows={6}
-                        className="input-control mb-4 block w-full border rounded py-3 px-3 placeholder-gray-400"
+                        className="input-control mb-4 block w-full border rounded py-3 px-4 placeholder-gray-400 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
                         placeholder="Message"
                     ></textarea>
                     <div className="form-btn">
-                        <button type="submit" className="btn bg-red-500 text-white text-md py-2 px-6 rounded-full">Send Message</button>
+                        <button type="submit" className="btn bg-red-500 text-white text-md py-2 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-110">Send Message</button>
                     </div>
                 </form>
             </div>
