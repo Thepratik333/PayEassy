@@ -3,9 +3,9 @@ import { ScrollArea } from "@radix-ui/react-scroll-area"; // Import from Radix U
 import { cn } from "../../lib/utils"; // Import the utility function
 export default function PublicationDetails() {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-blue-100 to-gray-100 p-6">
+    <div className="flex justify-center items-center min-h-screen bg-gradient-to-br from-blue-100 to-gray-100 lg:p-6 ">
       <Card className="max-w-3xl w-full shadow-xl rounded-3xl bg-white border border-gray-200">
-        <CardContent className="p-8">
+        <CardContent className="lg:p-8 pt-2">
           <h1 className="text-3xl font-extrabold text-center text-gray-900 mb-6">
             📜 Publication Details
           </h1>

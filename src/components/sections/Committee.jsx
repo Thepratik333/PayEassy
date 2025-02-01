@@ -2,7 +2,7 @@ import React from "react";
 
 function Committee() {
     return (
-        <section className="container w-full max-w-[1480px] mx-auto p-8 mt-16 mb-52 md:mb-20 sm:mb-0">
+        <section className="container w-full max-w-[1480px] mx-auto p-8 mt-16">
             <div className="bg-gradient-to-r from-blue-200 to-blue-50 rounded-3xl shadow-lg p-8">
                 <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
                     Committee
