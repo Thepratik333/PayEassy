@@ -3,7 +3,7 @@ import React from "react";
 function Committee() {
     return (
         <section className="container w-full max-w-[1480px] mx-auto p-8 mt-16 mb-52 md:mb-20 sm:mb-0">
-        <div className="bg-gradient-to-r from-blue-200 to-blue-50 rounded-3xl shadow-lg p-8">
+            <div className="bg-gradient-to-r from-blue-200 to-blue-50 rounded-3xl shadow-lg p-8">
                 <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
                     Committee
                 </h2>
@@ -87,8 +87,16 @@ function Committee() {
                     <h3 className="text-xl font-semibold text-blue-700">Contact Information</h3>
                     <p className="text-gray-700 mt-2">For more details, please contact:</p>
                     <ul className="text-gray-700 mt-2">
-                        <li>Dr. Disha Shah - <strong>+91 9427066704</strong></li>
-                        <li>Mr. Kirtankumar Rathod - <strong>+91 9427950363</strong></li>
+                        <li>
+                            <a href="tel:+919427066704" className="text-blue-600 hover:underline">
+                                Dr. Disha Shah - <strong>+91 9427066704</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+919427950363" className="text-blue-600 hover:underline">
+                                Mr. Kirtankumar Rathod - <strong>+91 9427950363</strong>
+                            </a>
+                        </li>
                     </ul>
                     <p className="text-gray-700 mt-2">E-mail: <a href="mailto:RSTVB-2025@indusuni.ac.in" className="text-blue-600 hover:underline">RSTVB-2025@indusuni.ac.in</a></p>
                 </div>
@@ -97,7 +105,11 @@ function Committee() {
             <div className="flex flex-col items-center justify-center space-y-2 mt-8">
                 <p className="text-lg text-gray-600 font-semibold">Made by Pratik Panchal</p>
                 <p className="text-sm text-gray-500">Student of University</p>
-                <p className="text-sm text-blue-500 cursor-pointer hover:underline">Contact: 918000318833</p>
+                <p className="text-sm text-blue-500 cursor-pointer hover:underline">Contact: &nbsp;
+                    <a href="tel:+918000318833" className="text-blue-600 hover:underline">
+                        +91 8000318833
+                    </a>
+                </p>
                 <div className="flex items-center space-x-2">
                     <p className="text-red-500">Indus University</p>
                     <p className="text-sm text-gray-500">© 2025 All Copyrights reserved</p>
